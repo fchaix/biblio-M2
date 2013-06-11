@@ -6,6 +6,11 @@
 %	twocolumn % Inutile avec le package multicol.
 	]{article}
 \usepackage{multicol} % Nécessaire pour l’abstract en onecolumn.
+\usepackage{geometry}
+	\geometry{
+		hmargin=2.5cm,
+		vmargin=2.3cm
+		}
 \usepackage[francais]{babel}
 \usepackage{fontspec}
     \setmainfont[%
@@ -36,6 +41,8 @@
     verbose=true
     ]{hyperref}
 \usepackage{lipsum}
+
+\input{fonctions}
 
 %%%%%%%% Concernant la biblio %%%%%%%%%%%
 \usepackage[

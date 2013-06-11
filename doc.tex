@@ -1,0 +1,63 @@
+\documentclass[%
+	a4paper,
+	9pt,
+	linktocpage=true,
+	onseide,
+%	twocolumn % Inutile avec le package multicol.
+	]{article}
+\usepackage{multicol} % Nécessaire pour l’abstract en onecolumn.
+\usepackage[francais]{babel}
+\usepackage{fontspec}
+    \setmainfont[%
+	Mapping=tex-text,
+	Numbers=OldStyle,
+	Ligatures={
+		TeX,
+		Common,
+		Rare,
+		Historical
+		}
+	]{Linux Libertine}
+\setmonofont{Ubuntu Mono}
+\usepackage[%
+    hidelinks=true
+    colorlinks=false
+    pdfauthor={François Chaix},
+    pdftitle={Document de travail — recherches biblio François Chaix},
+    pdfdisplaydoctitle=true, % Display document title instead of filename in title bar
+    pdfsubject={plop},
+    pdfkeywords={plop},
+    pdfproducer={LuaTeX, avec le package hyperref},
+    pdfcreator={LuaTex},
+    linktocpage=false,
+    pdfinfo={pouet ?},
+    pdflang={fr-FR},
+    unicode=true,
+    verbose=true
+    ]{hyperref}
+\usepackage{lipsum}
+
+%%%%%%%% Concernant la biblio %%%%%%%%%%%
+% \usepackage[
+% 	style=aem,
+% 	natbib=true,
+% 	backend=biber
+% 	]{biblatex}
+% \addbibresource{bib.bib}
+
+%%%%%%%% Concernant le document %%%%%%%%%
+\title{Mon super titre que je trouverais plus tard}
+\author{François \textsc{Chaix}}
+
+%%%%%%%% Début du document %%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+	\input{abstract}
+
+  	\begin{multicols}{2}
+		\input{corps}
+  	\end{multicols}
+
+\end{document}

@@ -38,12 +38,12 @@
 \usepackage{lipsum}
 
 %%%%%%%% Concernant la biblio %%%%%%%%%%%
-% \usepackage[
-% 	style=aem,
-% 	natbib=true,
-% 	backend=biber
-% 	]{biblatex}
-% \addbibresource{bib.bib}
+\usepackage[
+%	style=aem,
+	natbib=true,
+	backend=biber
+	]{biblatex}
+\addbibresource{bib.bib}
 
 %%%%%%%% Concernant le document %%%%%%%%%
 \title{Mon super titre que je trouverais plus tard}
@@ -51,13 +51,17 @@
 
 %%%%%%%% Début du document %%%%%%%%%%%%%%
 \begin{document}
-
+\nocite{*}
 \maketitle
 
 	\input{abstract}
 
   	\begin{multicols}{2}
 		\input{corps}
-  	\end{multicols}
+	\end{multicols}
+
+\footnotesize{
+\printbibliography
+}
 
 \end{document}

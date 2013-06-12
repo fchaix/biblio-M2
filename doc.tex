@@ -1,16 +1,18 @@
 \documentclass[%
 	a4paper,
-	9pt,
+	10pt,
 	linktocpage=true,
-	onseide,
+	oneside,
+	twocolumn,
+	DIV=calc, % DIV règle les proportions corps de texte-marges. Classic, c’est pour suivre les canons du Moyen-âge. Pardonnez-moi, prince.
 %	twocolumn % Inutile avec le package multicol.
-	]{article}
+	]{scrartcl}
 \usepackage{multicol} % Nécessaire pour l’abstract en onecolumn.
-\usepackage{geometry}
-	\geometry{
-		hmargin=2.5cm,
-		vmargin=2.3cm
-		}
+% \usepackage{geometry}
+% 	\geometry{
+% 		hmargin=2.5cm,
+% 		vmargin=2.3cm
+% 		}
 \usepackage[francais]{babel}
 \usepackage{fontspec}
     \setmainfont[%
@@ -23,7 +25,9 @@
 		Historical
 		}
 	]{Linux Libertine O}
-\setmonofont{Ubuntu Mono}
+    \setmonofont{Ubuntu Mono}
+    \setsansfont{Linux Biolinum O}
+\KOMAoptions{DIV=last}
 \usepackage[%
     hidelinks=true
     colorlinks=false
@@ -59,15 +63,17 @@
 %%%%%%%% Début du document %%%%%%%%%%%%%%
 \begin{document}
 \nocite{*}
-\maketitle
 
+\twocolumn[
+\begin{@twocolumnfalse}
+	\maketitle
 	\input{abstract}
-
 	\tableofcontents
+  \vspace{1cm}
+\end{@twocolumnfalse}
+]
 
-  	\begin{multicols}{2}
-		\input{corps}
-	\end{multicols}
+	\input{corps}
 
 	\input{figures}
 	

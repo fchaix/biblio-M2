@@ -1,0 +1,64 @@
+\documentclass[%
+	a4paper,
+	10pt,
+	linktocpage=true,
+	oneside,
+	twocolumn,
+	DIV=calc, 
+	% DIV règle les proportions corps de texte-marges. Classic, c’est pour
+	% suivre les canons du Moyen-âge. Pardonnez-moi, prince.
+	]{scrartcl}
+% scrartcl est la classe qui remplace la classe « article » de LaTeX. En gros
+% c’est la même chose, mais avec des choses mieux pour la typographie des
+% langues européennes, la gestion du nombre de caractères par ligne, etc.
+
+\usepackage[francais]{babel}
+\usepackage{fontspec}
+    \setmainfont[%
+	Numbers=OldStyle,
+	Ligatures={
+		TeX,
+		Common,
+		Rare,
+		Historical
+		}
+	]{Linux Libertine O}
+    \setmonofont{Ubuntu Mono}
+    \setsansfont{Linux Biolinum O}
+
+\KOMAoptions{DIV=last} 
+% La définition de DIV, dans le cas de calc, doit se déclarer après la
+% déclaration de la police.
+
+\usepackage[%
+    hidelinks=true
+    colorlinks=false
+    pdfauthor={François Chaix},
+    pdftitle={Document de travail — recherches biblio François Chaix},
+    pdfdisplaydoctitle=true, % Display document title instead of filename in title bar
+    pdfsubject={plop},
+    pdfkeywords={plop},
+    pdfproducer={LuaTeX, avec le package hyperref},
+    pdfcreator={LuaTex},
+    linktocpage=false,
+    pdfinfo={pouet ?},
+    pdflang={fr-FR},
+    unicode=true,
+    verbose=true
+    ]{hyperref}
+
+\usepackage{lipsum}
+
+\input{fonctions}
+
+%%%%%%%% Concernant la biblio %%%%%%%%%%%
+\usepackage[
+%	style=aem,
+	natbib=true,
+	backend=biber
+	]{biblatex}
+\addbibresource{bib.bib}
+
+%%%%%%%% Concernant le document %%%%%%%%%
+\title{Mon super titre que je trouverais plus tard}
+\author{François \textsc{Chaix}}

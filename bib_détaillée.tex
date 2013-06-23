@@ -21,10 +21,12 @@
 
 \begin{document}
 \nocite{*}
-	\twocolumn[
-	\begin{@twocolumnfalse}
-	\printbibliography
-	\end{@twocolumnfalse}
-	]
+
+\begin{onecolumn}
+
+	\defbibnote{note}{Vous trouverez ici la liste des références, avec mes annotations.}
+	\printbibliography[title={Bibliographie annotée},prenote=note]
+
+\end{onecolumn}
 
 \end{document}

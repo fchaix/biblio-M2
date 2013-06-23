@@ -10,7 +10,7 @@
 
 % Pour indenter les paragraphes, on redéfinit l'environement bibliographie (à partir du code contenu dans le fichier authortitle.bbx de la distrib) :
 \defbibenvironment{bibliography}
-  {\list % L'envoronement \list permet de faire des listes. C'est la base des célèbres itemize et autres enumerate.
+  {\list % L'environement \list permet de faire des listes. C'est la base des célèbres itemize et autres enumerate.
      {} % Le premier argument correspond à ce qui apparaît devant un \item. Ici, rien.
      {\setlength{\listparindent}{\parindent}% On assigne la longueur \parindent (longueur d'une indentation de paragraphe) à \listparindent (longueur de l'indentation de chaque item de la liste)
      \setlength{\leftmargin}{\bibhang}% marge gauche (\bibhang défini dans les standards de BibLaTeX).
@@ -19,8 +19,12 @@
   {\endlist}
   {\item}
 
-
 \begin{document}
 \nocite{*}
-\printbibliography
+	\twocolumn[
+	\begin{@twocolumnfalse}
+	\printbibliography
+	\end{@twocolumnfalse}
+	]
+
 \end{document}

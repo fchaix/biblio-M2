@@ -1,0 +1,30 @@
+% Ce style correspond aux spécifications pour le mémoire de M2 donné par F.
+% Laurent.
+
+\usepackage[francais]{babel}
+
+\usepackage{lipsum}
+
+% Arial-like font
+\usepackage[scaled]{helvet}
+%\usepackage[scaled]{uarial}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+% Interigne = 1.5
+% Note : \linespread est spécifique de KOMA-script
+\linespread{1.5}
+
+% Les marges à 2.5 (y compris le haut et le bas, vu que c'est pas précisé)
+\usepackage[%
+	a4paper,
+	left=2.5cm,
+	right=2.5cm,
+	top=2.5cm,
+	bottom=2.5cm
+	]{geometry}
+
+% Graphicx pour les figures, un classique...
+\usepackage{graphicx}
+
+\author{François \textsc{Chaix}}

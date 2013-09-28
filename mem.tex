@@ -1,0 +1,37 @@
+\documentclass[%
+	a4paper,
+	11pt,
+	linktocpage=true,
+	oneside,
+	DIV=calc, 
+	% DIV règle les proportions corps de texte-marges. Classic, c’est pour
+	% suivre les canons du Moyen-âge. Pardonnez-moi, prince.
+	% Note : à cause des règles à la con pour le mémoire, je vais devoir passer par-dessus avec geometry…
+	]{scrreprt}
+\usepackage{crapstyle}
+
+% La biblio...
+\usepackage[
+%	style=reading,
+	natbib=true,
+	backend=biber
+	]{biblatex}
+\addbibresource{bib.bib}
+
+\title{Rôle de la communauté symbiotique bactérienne dans la réponse des insectes au stress thermique}
+
+\input{fonctions}
+
+\begin{document}
+\nocite{*}
+
+	\maketitle
+	\input{content/abstract}
+	\tableofcontents
+
+	\input{content/plan}
+
+	
+\printbibliography
+
+\end{document}

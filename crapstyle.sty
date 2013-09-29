@@ -27,4 +27,22 @@
 % Graphicx pour les figures, un classique...
 \usepackage{graphicx}
 
+% Métadonnées du PDF (Pas indispensable, mais plus propre)
+\usepackage[%
+    hidelinks=true
+    colorlinks=false
+    pdfauthor={François Chaix},
+    pdftitle={Document de travail — recherches biblio François Chaix},
+    pdfdisplaydoctitle=true, % Display document title instead of filename in title bar
+    pdfsubject={plop},
+    pdfkeywords={plop},
+    pdfproducer={LuaTeX, avec le package hyperref},
+    pdfcreator={LuaTex},
+    linktocpage=false,
+    pdfinfo={pouet ?},
+    pdflang={fr-FR},
+    unicode=true,
+    verbose=true
+    ]{hyperref}
+
 \author{François \textsc{Chaix}}

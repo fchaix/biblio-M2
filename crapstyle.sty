@@ -1,8 +1,6 @@
 % Ce style correspond aux spécifications pour le mémoire de M2 donné par F.
 % Laurent.
 
-\usepackage[francais]{babel}
-
 \usepackage{lipsum}
 \usepackage{microtype}
 
@@ -11,14 +9,13 @@
 \usepackage[scaled]{helvet}
 %\usepackage{fontspec}
 %  \setmainfont[Mapping=tex-text]{Helvetica}
-
 %\usepackage[scaled]{uarial}
-\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\renewcommand*\familydefault{\sfdefault} %% On veut du sans serif (avec helvetica, si on ne se met pas en sans serif, on tombe avec la police Computer Modern)
 
 % Nécessaire pour les accents et autres ç
 \usepackage[T1]{fontenc}
 \usepackage{textcomp} % 
-%\usepackage[utf8]{inputenc} 
+%\usepackage[utf8]{inputenc} % Je sais pas pourquoi, mais ça il faut pas le mettre. (Ça doit avoir un rapport avec LuaLaTeX)
 
 % Interigne = 1.5
 % Note : \linespread est spécifique de KOMA-script
@@ -60,5 +57,8 @@
 %    \input{JourAbs.map}
 %    }
 %}
+
+% Francisation des noms de chapitre/partie, typographie francaise...
+\usepackage[francais]{babel}
 
 \author{François \textsc{Chaix}}

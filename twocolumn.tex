@@ -7,10 +7,12 @@
 	DIV=calc, 
 	% DIV règle les proportions corps de texte-marges. Classic, c'est pour
 	% suivre les canons du Moyen-âge. Pardonnez-moi, prince.
-	]{scrartcl}
+	]{scrreprt}
 % scrartcl est la classe qui remplace la classe « article » de LaTeX. En gros
 % c'est la même chose, mais avec des choses mieux pour la typographie des
 % langues européennes, la gestion du nombre de caractères par ligne, etc.
+
+\usepackage{shapepar} % Ça c’est pour le joli calligramme à la fin
 
 \input{preambule}
 \begin{document}
@@ -29,5 +31,13 @@
 
 	
 \printbibliography
+
+%\diamondpar{
+%	
+%}
+
+\Canflagshape{
+	Si vous venez de committer quelque chose mais que vous vous rendez compte que vous devez réparer ce commit, les versions récentes de git commit vous donnent accès à l’option --amend qui demande à git de remplacer le commit de HEAD par un autre, basé sur le contenu actuel de l’index. Cela vous donne l’opportunité d’ajouter de fichiers que vous avez oubliés ou de corriger des erreurs de typo dans le message du commit, avant de publier les changements pour les autre développeurs.	
+}
 
 \end{document}

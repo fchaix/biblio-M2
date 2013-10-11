@@ -1,0 +1,1 @@
+latexmk -pvc pour compiler à chaque modif du fichier

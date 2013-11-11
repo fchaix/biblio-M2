@@ -1,12 +1,8 @@
 \chapter{Réponses de l'insecte au stress de température} % (fold)
 \label{chap:repstress}
 	
-	\section{Généralités} % (fold)
-	\label{sec:g_n_ralit_s}
-
-		\subsection{Adaptation vs acclimatation} % (fold)
-		\label{sub:adaptation_vs_accilmatation}
-%			\input{content/part1/adaptation_vs_accilmatation}
+	\section{Introduction : adaptation vs acclimatation} % (fold)
+	\label{sec:adaptation_vs_acclimatation}
 
 Avant de rentrer plus profondément dans le sujet, il me semble nécessaire de
 préciser une subtilité de vocabulaire utile lorsque l'on discute d'une réponse
@@ -50,21 +46,19 @@ sucres).
 %		\label{sub:exemples_adaptations}
 %			\input{content/part1/exemples_adaptations}
 
-		\subsection{Les Heat-Shock Proteins (HSP), clé de voûte de la réponse acclimative} % (fold)
-		\label{sub:generalites_HSP}
+		\section{Les Heat-Shock Proteins (HSP), clé de voûte de la réponse acclimative} % (fold)
+		\label{sec:generalites_HSP}
 %			\input{content/part1/généralités_HSP}
-
-\cite{federhoffmann1999, zhang2011}
 
 Le terme HSP (\eng{Heat Shock Proteins}) désigne une grande famille de
 protéines initialement décrites comme étant induite spécifiquement par un
 stress thermique chaud. Par la suite, elles se sont avérées jouer un rôle bien
-plus large dans la réponse générique aux stress de diverses
+plus large\cite{zhang2011} dans la réponse générique aux stress de diverses
 natures\cite{sorensen2003}\footnote{Tableau Sørensen pour illustrer (Sørensen 2003, p. 3)}.
 
 % Rôles
 
-Ces protéines font pour la plupart partie du grand groupe des protéines chaperonnes. Les
+Ces protéines font pour la plupart partie du grand groupe des protéines chaperonnes\cite{federhoffmann1999}. Les
 protéines chaperonnes jouent des rôles multiples tournent tous autour de la
 gestion de la conformation des protéines, de leur repliement, leur appariement
 dans des complexes protéiques, ou encore le transport.  Leur rôle est crucial
@@ -77,7 +71,7 @@ cette sous-famille de chaperonnes que sont les HSPs.
 
 Les HSPs ont un taux de concervation dans le vivant extrêmement important, ce
 qui fait que leurs gènes sont souvent califiées de gènes dits <<~de ménage~>>
-(\eng{“Housekeeping genes”} en anglais).
+(\eng{“Housekeeping genes”} en anglais). De surcroît, le caractère universel de ces peotéines de stress a permis la généralisation de l’utilisation des protéines HSP70 comme marqueurs de stress cytotoxique. (Ryan et High-tower, 1996) % (trouvé dans http://www.edu.upmc.fr/sdv/docs_sdvbmc/Licence/biocel/gebranne/articles/HSPs.pdf)
 
 % Familles
 
@@ -86,21 +80,33 @@ leur poids moléculaire \cite{fink1999} (par exemple, les protéines de la
 famille de Hsp70 ont un poids moléculaire d'environ 70\,kDa), mais de récentes
 tentatives de clarification de cette nomenlature tendraient vers des noms ne
 faisant pas allusion au poids moléculaire\footnote{Kampinga et al., 2009. À
-voir si je le cite ou pas, juste pour ça...}
+voir si je le cite ou pas, juste pour ça...} Cf. tableau (à venir)
 
 % Les HSPs sont régulées par heat shock transcription factor (HSF1) (reviewed in Morimoto 1998).
+
+\subsection{Induction de l'expression des HSPs}
+
+Les HSPs sont pour la plupart exprimées de manière constitutive, afin de maintenir l'homéostasie des protéines repliées.
+Cependant, l'accumulation sous forme d'aggrégats de protéines dénaturées, lors d'un stress thermique, induit l'expression accélérée des HSPs (dont HSP70, servant très souvent de biomarqueur pour cette réponse).
+C'est ce pic d'expression qui est usuellement désigné par l'expression <<~réponse au stress~>>.
+
+Ce signal initial de la réponse au stress qu'est le déséquilibre de l'homéostasie est connu depuis longtemps (la moitié des anées 80, avec \citet{ananthan1986}).
+Des traveaux plus récents tentent de déterminer la nature chimique de la détection de l'accumulation des protéines dénaturées (citation à déterminer).
+
+Le mécanisme induit par ce signal implique la famille de protéines inductrices Hsf/Hsf1 \citet{voellmy2004} (mécanisme à développer, j'ai pas fini de lire la publi.)
 
 \subsubsection{Les petites HSPs} % (fold)
 \label{ssub:les_petites_hsps}
 
   Les petites HSPs, dont le poids moléculaire se situe entre 12 et 43\,kDa,
   contrairement aux autres familles ne sont exprimmées que lors d'un choc
-  thermique. Leur rôle est assez mal connu\footnote{Mettre à jour, peut-
-  être...}, mais elles sont décrites comme se liant aux protéines dénaturées.
+  thermique. Leur rôle est assez mal connu,
+  %\footnote{Mettre à jour, peut-être...}
+  mais elles sont décrites comme se liant aux protéines dénaturées.
   Le rôle de cette liaison peut être celui d'empêcher les protéines dénaturées
   de s'aggréger, ce qui gênerait l'action des HSPs chaperonnes.
 
-  Exemple : \cite{liu2013} (Sur-expression d’une petite HSP, HSP21, protège le
+  Exemple : \cite{liu2013} (Sur-expression d'une petite HSP, HSP21, protège le
   ver à soie des stress thermiques)
 
   Il a aussi été montré une forte affinité entre ces petites HSPs et le cytosquelette.
@@ -145,8 +151,8 @@ voir si je le cite ou pas, juste pour ça...}
 \subsubsection{La famille HSP90} % (fold)
 \label{ssub:la_famille_hsp90}
 
-\todo[inline]{Citation : \citet{chiosis2013} ssi j’arrive à obtenir un accès (Nature Structural \& Molecular Biology).\\
-Les publis que j’ai trouvé jusqu’à maintenant semblent dire que les rôles in vivo de HSP90 sont mal connus, mais elles (les publis) sont un peut vieilles. Dans celle-là, peut-être que je trouverais plus de choses.}
+%\todo[inline]{Citation : \citet{chiosis2013} ssi j’arrive à obtenir un accès (Nature Structural \& Molecular Biology).\\
+%Les publis que j’ai trouvé jusqu’à maintenant semblent dire que les rôles in vivo de HSP90 sont mal connus, mais elles (les publis) sont un peut vieilles. Dans celle-là, peut-être que je trouverais plus de choses.}
 
   Les HSP90 sont, à l'instar de HSP40, des protéines hautement concervées. On
   en retrouve dans tous les organismes, qu’ils soient eucaryotes ou
@@ -170,8 +176,8 @@ En effet, il a été montré que les HSP100 jouent un rôle dans la protéolyse 
 
 Outre les HSP, nous pouvons citer d'autres phénomènes constituant une réponse au stress thermique chez l'insecte.
 
-Tout d'abord, il est important de rappeler que le stress thermique, avant d'exercer ses effets délétères sur la physiologie, notemment les peotéines, induitdans un premier temps une réaction d'ordre nerveuse et hormonale, qui servira de signal afin de signaler la perturbation.
-La dopamine est un eurotrnsmetteur de l'insecte associé entre autres aux signaux de type stress, et est sollicité lors d'un stress thermique \cite{andersen2006}
+Tout d'abord, il est important de rappeler que le stress thermique, avant d'exercer ses effets délétères sur la physiologie, notemment les protéines, induit dans un premier temps une réaction d'ordre nerveuse et hormonale, qui servira de signal afin de signaler la perturbation.
+La dopamine est un neurotrnsmetteur de l'insecte associé entre autres aux signaux de type stress, et est sollicité lors d'un stress thermique \cite{andersen2006}. Dans l'étude \cite{andersen2006}, le stress thermique chez le moustique est induit par le repas de sang, provoquant une montée brutale de la température corporelle de l'insecte (de la température ambiante à 37-38°C).
 
 % Il y a aussi (Armstrong et al), avec cette histoire de K+ dans le cerveau…
 
@@ -180,23 +186,23 @@ La dopamine est un eurotrnsmetteur de l'insecte associé entre autres aux signau
 Les chocs de température n'affectent pas uniquement la conformation des protéines.
 Un autre point clé physiologique est aussi sévèrement touché : le système nerveux.
 Le choc termique va affecter les mouvements ioniques (K⁺) nécessaires aux potentiels d'action, en opérant une perturbation des caneaux ioniques.
-Cela va notament provoquer un phénomène de «coma» thermique (\eng{chill coma} en anglais).
+Cela va notament provoquer un phénomène de «coma» thermique (\eng{chill coma} en anglais)\cite{armstrong2012}.
 
 
-	\section{Exemples chez les modèles d'insectes les plus étudiés} % (fold)
-	\label{sec:exemples_modeles}
-		\input{content/part1/exemples}
+	% \section{Exemples chez les modèles d'insectes les plus étudiés} % (fold)
+	% \label{sec:exemples_modeles}
+	% 	\input{content/part1/exemples}
 
-		\subsection{Exemple droso} % (fold)
-		\label{sub:exemple_droso}
-			\input{content/part1/exemple_droso}
+	% 	\subsection{Exemple droso} % (fold)
+	% 	\label{sub:exemple_droso}
+	% 		\input{content/part1/exemple_droso}
 
-		\subsection{Exemple moustique} % (fold)
-		\label{sub:exemple_moustique}
-			\input{content/part1/exemple_moustique}
+	% 	\subsection{Exemple moustique} % (fold)
+	% 	\label{sub:exemple_moustique}
+	% 		\input{content/part1/exemple_moustique}
 
-		\subsection{Exemple puceron} % (fold)
-		\label{sub:exemple_puceron}
-			\input{content/part1/exemple_puceron}
+	% 	\subsection{Exemple puceron} % (fold)
+	% 	\label{sub:exemple_puceron}
+	% 		\input{content/part1/exemple_puceron}
 
 % chapter stressinsect (end)

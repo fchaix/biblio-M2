@@ -1,7 +1,25 @@
-\begin{figure}[tb]
-	\begin{center}
-		\includegraphics[height=7cm]{troll.png}
-	\end{center}
-	\caption{Problem ?}
-	\label{fig:troll}
+\documentclass[%
+	a4paper,
+	11pt,
+	linktocpage=true,
+	oneside,
+	DIV=calc, 
+	% DIV règle les proportions corps de texte-marges. Classic, c'est pour
+	% suivre les canons du Moyen-âge. Pardonnez-moi, prince.
+	% Note : à cause des règles à la con pour le mémoire, je vais devoir passer par-dessus avec geometry…
+	]{scrreprt}
+\usepackage{crapstyle}
+\input{fonctions}
+
+\begin{document}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.5]{content/figures/tab-sorensen.png}
+\caption{Inducteurs écologiques de Hsps. La combinaison de plusieurs de ces facteurs augmente le degré d'expression des Hsps. Les auteurs (Sørensen \textit{et al.} 2003) évoquent aussi une augmentation de la fitness et la résistance des individus soumis à un stress limité, ou à des stress combinés}
+\label{tabsørensen}
 \end{figure}
+
+\newpage
+plop
+\end{document}

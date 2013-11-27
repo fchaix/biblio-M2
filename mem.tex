@@ -21,6 +21,7 @@
 	natbib=true, % Ça je sais plus à quoi ça sert, à vérifier.
 	backend=biber % Par-ce que j'aime Justin Biber. Non, c'est la version de BibLaTeX qui lit l'UTF-8 ;)
 	]{biblatex}
+%\renewcommand*{\bibfont}{\small}
 \addbibresource{bib.bib} % Bib bob bidou blop !
 
 % \title{Rôle de la communauté symbiotique bactérienne dans la réponse des insectes au stress thermique}
@@ -35,12 +36,15 @@
 	\tableofcontents
 	\pagebreak % Pasque sinon, l'intro commence direct après la TOC...
 
+\nocite{zhao2012}
+
 	\input{content/plan}
 
-\linespread{1}
+%\linespread{1}
+%\newgeometry{bottom=2cm}
+
 \printbibliography%[sorting=nty]
 \addcontentsline{toc}{section}{Références}	
-
 % \listoftodos
 
 \end{document}

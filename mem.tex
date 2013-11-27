@@ -30,12 +30,13 @@
 \input{fonctions}
 
 \begin{document}
+\renewcommand{\refname}{R\'ef\'erences bibliographiques}
 
 	\maketitle
 %	\input{content/abstract}
 	\tableofcontents
 	\pagebreak % Pasque sinon, l'intro commence direct après la TOC...
-
+\setcounter{page}{1}
 \nocite{zhao2012}
 
 	\input{content/plan}
@@ -44,7 +45,7 @@
 %\newgeometry{bottom=2cm}
 
 \printbibliography%[sorting=nty]
-\addcontentsline{toc}{section}{Références}	
+\addcontentsline{toc}{section}{Références bibliographiques}	
 % \listoftodos
 
 \end{document}

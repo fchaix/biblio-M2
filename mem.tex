@@ -32,8 +32,9 @@
 \begin{document}
 \renewcommand{\refname}{R\'ef\'erences bibliographiques}
 
-	\maketitle
+%	\maketitle
 %	\input{content/abstract}
+\thispagestyle{empty}
 	\tableofcontents
 	\pagebreak % Pasque sinon, l'intro commence direct après la TOC...
 \setcounter{page}{1}
@@ -43,9 +44,9 @@
 
 %\linespread{1}
 %\newgeometry{bottom=2cm}
-
+\sloppy
 \printbibliography%[sorting=nty]
-\addcontentsline{toc}{section}{Références bibliographiques}	
+\addcontentsline{toc}{section}{\textsc{Références bibliographiques}}
 % \listoftodos
 
 \end{document}
